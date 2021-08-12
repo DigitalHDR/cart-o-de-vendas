@@ -9,18 +9,17 @@
 }
 
 body {
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
 }
 
 .conteiner {
-    position: relative;
-    width: 800px;
-    /* background: url(./img/sala.jpg)no-repeat center; */
-    background-size: 900px;
-    background: cornflowerblue;
+    width: 900px;
+    min-width: 900px;
+    background: url(./img/sala.jpg)no-repeat center;
 }
 
 .conteiner header {
@@ -30,6 +29,7 @@ body {
 }
 
 .mega_sale {
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,11 +63,20 @@ body {
     flex-direction: column;
     margin-right: 80px;
     color: #fff;
+
+}
+
+.obj_porcento {
+    display: flex;
+    margin-top: -18px;
+    clip-path: polygon(0% 0%, 60% 0, 60% 50%, 29% 74%, 0 50%);
+    background: #dfcb1f;
 }
 
 .up_to h1 {
     font-weight: 500;
     font-size: 3em;
+    padding: 8px;
 }
 
 .up_to .porcentagem {
@@ -131,22 +140,25 @@ body {
     user-select: none; 
 }
 
-.conteiner footer {
+.conteiner .footer {
+    margin-top: 70px;
     display: flex;
     justify-content: flex-end;
 }
 
-.conteiner footer ul {
+.conteiner .footer ul {
+    z-index: 10;
     display: flex;
     padding: 10px;
     list-style: none;
 }
 
-.conteiner footer ul li {
+.conteiner .footer ul li {
     margin: 0px 5px;
 }
 
-.conteiner footer ul li a {
+.conteiner .footer ul li a {
+    font-size: 20px;
     text-decoration: none;
     color: #000;
 }
