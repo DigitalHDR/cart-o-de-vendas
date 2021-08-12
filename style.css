@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 
 * {
     margin: 0;
@@ -49,9 +50,11 @@ body {
 }
 
 .mega_sale h3 {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 2em;
-    letter-spacing: -7px;
+    letter-spacing: -1px;
+    font-style: italic;
+
 }
 
 .up_to {
@@ -65,6 +68,11 @@ body {
 .up_to h1 {
     font-weight: 500;
     font-size: 3em;
+}
+
+.up_to .porcentagem {
+    font-weight: 200;
+    font-family: 'Georama', sans-serif;
 }
 
 .main {
@@ -90,19 +98,38 @@ body {
     padding: 0px 10px;
     clip-path: polygon(0% 9%, 83% 9%, 90% 50%, 83% 91%, 0% 91%);
     background: rgb(0, 0, 0);
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none; 
 }
 
-/* .main .obj2 {
-    width: 20px;
-    height: 20px;
-    clip-path: polygon(0 0, 235px 0, 250px 50%, 235px 100%, 0 100%);
+.main .obj2 {
+    position: relative;
+    right: 18px;
+    z-index: 10;
+    clip-path:  polygon(0% 9%, 40% 9%, 84% 50%, 40% 91%, 0% 91%, 46% 50%);
     background: #ffffff;
+    color: #fff;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none; 
 }
 
 .main .obj3 {
-    clip-path: polygon(0 0, 235px 0, 250px 50%, 235px 100%, 0 100%);
+    position: relative;
+    right: 33px;
+    z-index: 10;
+    clip-path:  polygon(0% 9%, 40% 9%, 84% 50%, 40% 91%, 0% 91%, 46% 50%);
     background: #ffffff;
-} */
+    color: #fff;
+    user-select: none; 
+}
 
 .conteiner footer {
     display: flex;
@@ -116,7 +143,7 @@ body {
 }
 
 .conteiner footer ul li {
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 .conteiner footer ul li a {
