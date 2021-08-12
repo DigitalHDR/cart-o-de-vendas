@@ -67,9 +67,42 @@ body {
     font-size: 3em;
 }
 
-.conteiner main {
-    padding: 0px 10px;
+.main {
+    display: flex;
 }
+
+
+.main .obj0 {
+    z-index: 10;
+    clip-path: polygon(0% 9%, 89% 9%, 96% 50%, 89% 91%, 0% 91%);
+    background: rgb(223, 203, 31);
+}
+
+.main h1 {
+    padding: 10px 30px 10px 10px;
+    font-size: 1.5em;
+    letter-spacing: 8px;
+}
+
+.main .obj1 {
+    position: absolute;
+    margin: 10px 7px;
+    padding: 0px 10px;
+    clip-path: polygon(0% 9%, 83% 9%, 90% 50%, 83% 91%, 0% 91%);
+    background: rgb(0, 0, 0);
+}
+
+/* .main .obj2 {
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(0 0, 235px 0, 250px 50%, 235px 100%, 0 100%);
+    background: #ffffff;
+}
+
+.main .obj3 {
+    clip-path: polygon(0 0, 235px 0, 250px 50%, 235px 100%, 0 100%);
+    background: #ffffff;
+} */
 
 .conteiner footer {
     display: flex;
